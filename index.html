@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JARVIS - AI Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">J.A.R.V.I.S</div>
+            <div class="status-bar">
+                <div class="status-item">SYSTEM: <span class="status-active">ONLINE</span></div>
+                <div class="status-item">BATTERY: <span id="battery">--%</span></div>
+                <div class="status-item">TIME: <span id="time">--:--</span></div>
+            </div>
+        </header>
+
+        <main>
+            <div class="arc-reactor">
+                <div class="ring outer-ring"></div>
+                <div class="ring middle-ring"></div>
+                <div class="ring inner-ring"></div>
+                <div class="core-image">
+                    <img src="Mr3W.gif" alt="AI Core">
+                </div>
+            </div>
+
+            <div class="interface">
+                <div class="message-area">
+                    <h2 id="heading">INITIALIZING...</h2>
+                    <p id="response">Waiting for command...</p>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <button id="btn" class="speak-btn">
+                <i class="fas fa-microphone"></i>
+                <span class="btn-text">ACTIVATE VOICE</span>
+            </button>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
